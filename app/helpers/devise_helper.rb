@@ -13,6 +13,7 @@ module DeviseHelper
 	</div>
 	HTML
 
+	
 	html.html_safe
 
 	end
