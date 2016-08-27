@@ -14,6 +14,7 @@ gem 'bootstrap-sass'
 gem "paperclip"
 gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro"
+gem 'devise'
 
 group :development, :test do
   gem 'sqlite3'
