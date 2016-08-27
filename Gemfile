@@ -12,6 +12,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
 gem "paperclip"
+gem "paperclip-dropbox", ">= 1.1.7"
+gem "figaro"
 
 group :development, :test do
   gem 'sqlite3'
