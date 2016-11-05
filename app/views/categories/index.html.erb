@@ -6,8 +6,8 @@
     <% @categories.each do |category| %>
       
         <li><%= link_to category.name, category %></li>
-        <% link_to 'Show', category %>
-        <% link_to 'Edit', edit_category_path(category) %>
+        <%= link_to 'Show', category %>
+        <%= link_to 'Edit', edit_category_path(category) %>
         <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %>
       
     <% end %>
