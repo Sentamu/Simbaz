@@ -2,26 +2,45 @@
 <div class="white"> 
 <h1>The Global Traders' Meeting Point</h1>
 <h2>Whatever you want, When you want it</h2>
+<%= search_form_for @search do |f| %>
+ <div class="form-group">
+
+ 	<div class="col-md-10">
+ 	<% f.label :name_cont, "Name Contains" %>
+ 	<%= f.text_field :name_cont, class: "form-control", autofocus: true, placeholder: 'What are You Shopping ?' %>
+    </div>
+    <div class="col-md-2">
+ 	<%= f.submit "Search", class: "form-control" %>
+    </div>
+
+ </div>
+ 
+ 	
+ 
+<% end %>
 </div>
 </div>
+
 
 
 <div class="center">
- <div class="row">
+ <div class="row pinterest-grid">
  <% @listings.each do |listing| %>
- <div class="col-md-3">
-   <div class="thumbnail">
+ <div class="col-md-3 pin-item">
+   <div class="thumbnail nn">
     <%= link_to image_tag(listing.image.url), listing %>
-     
-        <div class="caption">
+      <div class="caption">
         <h3><%= listing.name %></h3>
-        <p><%= number_to_currency(listing.price) %></p>
-        <p><%= "Sold by #{listing.user.name}" %></p>
+        <p><strong><%= number_to_currency(listing.price) %></strong></p>
+        <p><strong><%= "Sold by #{listing.user.name}" %></strong></p>
         
         
         
       </div>
+     
+        
   </div>
+
 
 
 </div>

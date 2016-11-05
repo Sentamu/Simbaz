@@ -9,17 +9,21 @@ end
   # GET /listings
   # GET /listings.json
   def index
-    @listings = Listing.all.order("created_at DESC")
+     @search = Listing.search(params[:q])
+     @listings = @search.result
+    #@listings = Listing.all.order("created_at DESC")
   end
 
   # GET /listings/1
   # GET /listings/1.json
   def show
+    @category = Category.all
   end
 
   # GET /listings/new
   def new
     @listing = Listing.new
+    @category = Category.all
   end
 
   # GET /listings/1/edit
@@ -75,7 +79,7 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def listing_params
-      params.require(:listing).permit(:name, :description, :price, :image)
+      params.require(:listing).permit(:name, :description, :price, :image, :category_id)
     end
 
     def check_user

@@ -13,4 +13,29 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require turbolinks
+//= require masonry/jquery.masonry
+//= require masonry.pkgd
+//= require imagesloaded
+
+
+function masonryAllTheThings(){
+	
+  $('.pinterest-grid').imagesLoaded(function(){
+
+ 	     $('.pinterest-grid').masonry({
+	 
+	        itemSelector: '.pin-item',
+	        columnWidth: '.pin-item'
+	      });
+
+      });
+
+}
+
+
+
+ $(document).ready(masonryAllTheThings);
+
+
+
+ $(document).on('page:change', masonryAllTheThings);
