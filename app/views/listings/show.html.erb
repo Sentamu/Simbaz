@@ -8,7 +8,7 @@
 	</div>
 	<div class="col-md-6">
 		<h3><%= @listing.name %></h3>
-		
+		<p>Category: <%=link_to @listing.category.name, category_path(:id => @listing.category.id) %></p>
 		<p>Price: <%= number_to_currency(@listing.price) %></p>
 		<p><%= @listing.description %></p>
 		<br>
