@@ -26,6 +26,7 @@ gem 'sunspot_rails'
 gem 'ransack'
 gem 'jquery-masonry-rails'
 gem 'imagesLoaded_rails'
+gem 'activeadmin', github: 'activeadmin'
 
 
 group :development, :test do
