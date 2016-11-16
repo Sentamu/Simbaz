@@ -30,4 +30,19 @@ ActiveAdmin.register_page "Dashboard" do
     #   end
     # end
   end # content
+  #ActiveAdmin::Dashboards.build do
+
+   #section "Recent Listings" do
+    #table_for Listing.order("id desc").limit(15) do
+       # column :id
+        #column "The Name",:name do |listing|
+           # link_to listing.name,[:admin,listing]
+          #  end
+      #  column :description
+       # column :price
+       # column :category, :sortable => :category
+       # column :created_at
+    #end
+   # strong (link_to "Show All Listing")
+
 end
