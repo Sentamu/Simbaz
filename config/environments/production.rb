@@ -78,8 +78,10 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
    
   #required for devise. remember to change local host 3000 to actual application host 
-  config.action_mailer.default_url_options = { host: 'simbaz.herokuapp.com' }
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.perform_deliveries = true
+Rails.application.routes.default_url_options[:host] = 'simbaz.herokuapp.com'
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.perform_deliveries = true
+config.action_mailer.raise_delivery_errors = false
+config.action_mailer.default :charset => "utf-8"
 end
  
