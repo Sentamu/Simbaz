@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   end   
 
 
-
+  
 
   get 'pages/about'
 
@@ -25,6 +25,8 @@ Rails.application.routes.draw do
   get 'sales' => "orders#sales"
 
   get 'purchases' => "orders#purchases"
+
+  get ':name' => 'users#show', as: 'user'
 
   # The priorit y is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
