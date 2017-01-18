@@ -38,6 +38,7 @@
         <h3><%= listing.name %></h3>
         <p><strong><%= number_to_currency(listing.price) %></strong></p>
         <p><strong><%= "Sold by #{listing.user.name}" %></strong></p>
+        <h3><%= "Posted: #{listing.created_at.strftime("%b:%d:%Y")}" %><%= " at #{listing.created_at.strftime("%H:%M")}" %> <h3>
         
         
         

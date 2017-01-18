@@ -11,6 +11,8 @@
 		<p>Category: <%=link_to @listing.category.name, category_path(:id => @listing.category.id) %></p>
 		<p>Price: <%= number_to_currency(@listing.price) %></p>
 		<p><%= @listing.description %></p>
+		<p><strong><%= link_to "Sold by #{@listing.user.name}", user_path(@listing.user.name) %></strong></p>
+        <p><%= "Posted: #{@listing.created_at.strftime("%b:%d:%Y")}" %><%= " at #{@listing.created_at.strftime("%H:%M")}" %> </p>
 		<br>
 		<div class ="center">
 

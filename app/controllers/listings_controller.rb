@@ -10,8 +10,8 @@ end
   # GET /listings.json
   def index
      @search = Listing.search(params[:q])
-     @listings = @search.result
-    #@listings = Listing.all.order("created_at DESC")
+     @listings = @search.result.order("created_at DESC")
+     #@listings = Listing.all.order("created_at DESC")
   end
 
   # GET /listings/1
