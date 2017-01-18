@@ -19,8 +19,5 @@
 # Ignore application configuration
 /config/application.yml
 
-# Ignore mail keys
-/config/initializers/app_env_vars.rb
-
 #ignore files uploaded on local host
 /public/system
