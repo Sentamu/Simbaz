@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :clients
-  root 'listings#index'
+  root 'pages#home'
   devise_for :admin_users, ActiveAdmin::Devise.config
   
  
@@ -15,11 +15,13 @@ Rails.application.routes.draw do
   end   
 
 
-  
 
+  
   get 'pages/about'
 
   get 'pages/contact'
+
+  get 'pages/home'
 
   get 'seller' => "listings#seller"
 

@@ -21,4 +21,38 @@
  *= require_self
  */
 
- 
+ .bg-1 { 
+    background-image: url("https://dl.dropboxusercontent.com/s/hpphhl63pa1r5ix/white%20-%20Copy.jpg");
+	color: white;
+	background-attachment: fixed;
+}
+.bg-2 { 
+    background-color: #F5F5F3; /* Dark Blue */
+    color: #333333;
+}
+.bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #333333;
+}
+
+.bg-4 { 
+
+    background-image: url("https://dl.dropboxusercontent.com/s/ki0ixfieubfuj85/header-bg.jpg");
+	color: white;
+	background-attachment: fixed;
+}
+
+.strokeme
+{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #222222 !important;
+    color: white !important;
+}

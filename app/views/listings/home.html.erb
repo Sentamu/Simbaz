@@ -1,0 +1,23 @@
+<div class="jumbotron">
+<div class="white"> 
+
+<%= search_form_for @search do |f| %>
+     
+     <div class="form-group">
+
+      <div class="col-md-10">
+      <% f.label :name_cont, "Name Contains" %>
+     <%= f.text_field :name_cont, class: "form-control", autofocus: true, placeholder: 'What are You Shopping ?' %>
+        </div>
+        <div class="col-md-2">
+      <%= f.submit "Search", class: "form-control" %>
+        </div>
+
+      </div>
+       
+  
+ 
+      <% end %>
+
+</div>
+</div>
