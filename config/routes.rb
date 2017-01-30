@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :clients
-  root 'pages#home'
+  root 'listings#index'
   devise_for :admin_users, ActiveAdmin::Devise.config
   
  
