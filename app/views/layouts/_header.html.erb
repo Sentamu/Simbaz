@@ -15,24 +15,26 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
 
-       <!-- <li><%= link_to "About", pages_about_path %></li> -->
-        <!-- <li><a href="/clients/new">Contact</a></li> -->
-        <li><% link_to "categories", categories_path %></li>
+       <!-- <li><%= link_to "About", pages_about_path %></li> 
+        <!- < li><a href="/pages/home">Home</a><li>-->
+         <li><a href="/clients/new">Contact</a></li> 
+         <li><% link_to "categories", categories_path %></li>
          
-         <li><a href="/pages/home">Home</a><li> 
+          
         
-          <!--<li><a href="/categories/15">Clothing</a><li> -->
-             <!-- <li><a href="/categories/16">Computers & Electronics</a><li> -->
+          <li><a href="/categories/15">Clothing</a><li> 
+              <li><a href="/categories/16">Computers & Electronics</a><li> 
               <!-- <li><a href="/categories/27">Jewellery</a><li>-->
-                <!--<li><a href="/categories/35">Phones and Gadgets</a><li>-->
-                  <li><a href="/categories/2">Categories</a><li>
-                    <li><a href="/listings" style="color: #F0A700">See All Items For Sell</a><li>
+                <li><a href="/categories/35">Phones and Gadgets</a><li>
+                  <li><a href="/categories/2">All Categories</a><li>
+                    <!--<li><a href="/listings" style="color: #F0A700">See All Items For Sell</a><li>-->
         
         
 
         <% if user_signed_in? %>
 
         <li><%= link_to 'Sell or Advertise', new_listing_path, {:style=>"color: #F0A700 !important;"} %></li>
+        <li><%= link_to 'My shop', current_user.name, {:style=>"color: #F0A700 !important;"} %></li>
         <% end %>
 
         

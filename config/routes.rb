@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  resources :comments
   resources :clients
-  root 'listings#index'
+  root 'pages#home'
   devise_for :admin_users, ActiveAdmin::Devise.config
   
  
@@ -12,6 +13,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :listings do
      resources :orders, only: [:new, :create]
+
   end   
 
 
