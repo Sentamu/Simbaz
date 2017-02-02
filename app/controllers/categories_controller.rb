@@ -13,11 +13,11 @@ class CategoriesController < ApplicationController
     @categories = Category.all
     @category = Category.find(params[:id])
     @title = @category.name
-    @listings = @category.listings
-  end
+    @listings = @category.listings.order("created_at DESC")
 
   
 
   
+end
 end
 
