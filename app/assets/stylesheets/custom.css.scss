@@ -428,3 +428,21 @@ text-align: center;
   -ms-transform: scale(1);
   transform: scale(1);
 }
+
+
+
+.nnn{
+  background: transparent;
+  
+  box-shadow: none;
+}
+
+.nnn {
+   width: 350px;
+   height: 400px;
+   float: left;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   cursor: default;
+  }
