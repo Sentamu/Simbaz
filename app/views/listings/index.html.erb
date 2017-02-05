@@ -107,8 +107,9 @@
 
  <div class="container">
   <h2 class="center">Today's Latest Listings</h2>
+ <%= will_paginate @listings %>
  <div class="row pinterest-grid">
- <% @listings[0,8].each do |listing| %>
+ <% @listings.each do |listing| %>
  
  <div class="col-xs-6 col-md-3 pin-item">
    <div class="thumbnail nna">
@@ -130,7 +131,9 @@
 
 </div>
 <% end %>
-</div></div>
+</div>
+<%= will_paginate @listings %>
+</div>
 <hr>
 <h4 class="center">For More Listings <a href="/categories/2"> Check our categories</a></h4>
 

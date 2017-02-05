@@ -10,7 +10,7 @@ end
   # GET /listings.json
   def index
      @search = Listing.search(params[:q])
-     @listings = @search.result.order("created_at DESC")
+     @listings = @search.result.order("created_at DESC").paginate(page: params[:page], per_page: 10)
      #@listings = Listing.all.order("created_at DESC")
   end
 

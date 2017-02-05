@@ -4,6 +4,28 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+         #acts_as_messageable
+
+          #def display_name
+          	#{}"User #{id}"
+         # end
+
+          #def mailboxer_email(object)
+          #	nil
+         # end
+
+
+
+
+
+
+
+
+
+
+
+
+
 validates :name, presence: true
 validates_uniqueness_of :name
 

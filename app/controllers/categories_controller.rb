@@ -13,7 +13,7 @@ class CategoriesController < ApplicationController
     @categories = Category.all
     @category = Category.find(params[:id])
     @title = @category.name
-    @listings = @category.listings.order("created_at DESC")
+    @listings = @category.listings.order("created_at DESC").paginate(page: params[:page], per_page: 10)
 
   
 

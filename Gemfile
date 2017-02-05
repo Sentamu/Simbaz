@@ -7,6 +7,8 @@ ruby "2.2.4"
 
 gem 'rails', '4.2.5.1'
 
+gem 'will_paginate', '~> 3.0'
+
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -27,6 +29,7 @@ gem 'ransack'
 gem 'jquery-masonry-rails'
 gem 'imagesLoaded_rails'
 gem 'activeadmin', github: 'activeadmin'
+gem 'mailboxer'
 
 
 group :development, :test do
