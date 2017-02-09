@@ -4,15 +4,15 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-         #acts_as_messageable
+         acts_as_messageable
 
-          #def display_name
-          	#{}"User #{id}"
-         # end
+          def mailboxer_name
+          	self.name
+          end
 
-          #def mailboxer_email(object)
-          #	nil
-         # end
+          def mailboxer_email(object)
+          	self.email
+          end
 
 
 

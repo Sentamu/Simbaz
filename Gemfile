@@ -29,7 +29,8 @@ gem 'ransack'
 gem 'jquery-masonry-rails'
 gem 'imagesLoaded_rails'
 gem 'activeadmin', github: 'activeadmin'
-gem 'mailboxer'
+gem 'mailboxer', github: 'mailboxer/mailboxer'
+gem 'chosen-rails'
 
 
 group :development, :test do

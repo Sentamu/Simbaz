@@ -17,6 +17,14 @@ GIT
       sass-rails
       sprockets (< 4.1)
 
+GIT
+  remote: git://github.com/mailboxer/mailboxer.git
+  revision: 0e41d6a4aa02eb6e74300e3a985a5c3c18a3c297
+  specs:
+    mailboxer (0.14.0)
+      carrierwave (>= 0.5.8)
+      rails (>= 4.2.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -75,6 +83,10 @@ GEM
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
+    chosen-rails (1.5.2)
+      coffee-rails (>= 3.2)
+      railties (>= 3.0)
+      sass-rails (>= 3.2)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.8)
@@ -139,9 +151,6 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
-    mailboxer (0.14.0)
-      carrierwave (>= 0.5.8)
-      rails (>= 4.2.0)
     masonry-rails (0.2.4)
       railties
     mime-types (3.1)
@@ -273,6 +282,7 @@ DEPENDENCIES
   activeadmin!
   bootstrap-sass
   byebug
+  chosen-rails
   coffee-rails (~> 4.1.0)
   devise
   figaro
@@ -282,7 +292,7 @@ DEPENDENCIES
   jquery-masonry-rails
   jquery-rails
   jquery-turbolinks
-  mailboxer
+  mailboxer!
   masonry-rails (~> 0.2.0)
   paperclip
   paperclip-dropbox (>= 1.1.7)

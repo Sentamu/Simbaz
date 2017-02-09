@@ -119,8 +119,7 @@
         <p><strong><%= number_to_currency(listing.price) %></strong></p>
         <p><strong><%= link_to "Sold by #{listing.user.name}", user_path(listing.user.name) %></strong></p>
         <h3><%= "Posted: #{listing.created_at.strftime("%b:%d:%Y")}" %><%= " at #{listing.created_at.strftime("%H:%M")}" %> <h3>
-        
-        
+        <p><strong><%= link_to 'Send Seller Message', listing %></strong></p>
         
       </div>
      
@@ -264,10 +263,16 @@
       <%= link_to image_tag("5.jpg", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
        <div class="carousel-caption">
               <h1 class="strokeme">Start Selling On Sentams</h1>
-
-             <h3 class="strokeme">Thousands Of Buyers Cant Wait to See what you Have in Store</h3>
+              <h3 class="strokeme">Thousands Of Buyers Cant Wait to See what you Have in Store</h3>
               
+              <% if user_signed_in? %>
+             <h1 class="strokeme"><%= link_to 'Go to My shop', current_user.name, {:style=>"color: #F0A700 !important;"} %></h1>
+
+
+
+              <% else %>
               <p><a class="btn btn-lg btn-primary" href="/users/sign_up" role="button">Open a Shop Today</a></p>
+              <% end %>
             </div>
      
     </div>

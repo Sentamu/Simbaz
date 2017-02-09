@@ -1,7 +1,12 @@
 class ListingsController < ApplicationController
   before_action :set_listing, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate_user!, only: [:seller, :new, :create, :edit, :update, :destroy]
+  before_filter :authenticate_user!, only: [:seller, :new, :create, :edit, :update, :destroy, :showz]
   before_filter :check_user, only: [:edit, :update, :destroy]
+
+   def showz
+    @category = Category.all
+    end
+
 
 def seller
   @listings = Listing.where(user: current_user).order("created_at DESC")
@@ -12,6 +17,7 @@ end
      @search = Listing.search(params[:q])
      @listings = @search.result.order("created_at DESC").paginate(page: params[:page], per_page: 10)
      #@listings = Listing.all.order("created_at DESC")
+
   end
 
 
@@ -21,6 +27,8 @@ end
   def show
     @category = Category.all
   end
+
+   
 
   # GET /listings/new
   def new
