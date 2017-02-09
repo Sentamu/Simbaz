@@ -76,6 +76,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.action_mailer.default_url_options = { :host => 'www.sentams.com' }
    
   #required for devise. remember to change local host 3000 to actual application host 
  
