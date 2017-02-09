@@ -22,12 +22,12 @@ function toggle_div_fun(id) {
 
 
 <div class="row">
-	<div class="col-md-6">
+	<div class="col-xs-6 col-md-6">
 		<div class="thumbnail">
 	<%= image_tag @listing.image.url %>
 </div>
 	</div>
-	<div class="col-md-6">
+	<div class="col-xs-6 col-md-6">
 		<h3><%= @listing.name %></h3>
 		<p>Category: <%=link_to @listing.category.name, category_path(:id => @listing.category.id) %></p>
 		<p>Price: <%= number_to_currency(@listing.price) %></p>

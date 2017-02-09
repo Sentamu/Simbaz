@@ -81,15 +81,16 @@
 <div class="jumbotron">
 <div class="white"> 
 <h2>Sign Up For Free, and Start Posting Your Ads</h2>
+<p>Send a Seller a message for more details, check your inbox to see offers from potential buyers</p>
 <%= search_form_for @search do |f| %>
      
      <div class="form-group">
 
-      <div class="col-md-10">
+      <div class="col-xs-10 col-md-10">
       <% f.label :name_cont, "Name Contains" %>
      <%= f.text_field :name_cont, class: "form-control", autofocus: true, placeholder: 'What are You Shopping ?' %>
         </div>
-        <div class="col-md-2">
+        <div class="col-xs-2 col-md-2">
       <%= f.submit "Search", class: "form-control" %>
         </div>
 
