@@ -12,8 +12,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner strokeme" role="listbox">
     <div class="item active">
-
-      <img class="img-responsive" src="http://dl.dropboxusercontent.com/s/xol39k1lth35trd/6.jpg" alt="Slide1" align="middle">
+      <%= link_to image_tag("6.jpg", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image", :align => "middle" } %>
      <div class="carousel-caption">
       <% if user_signed_in? %>
       <h1 class="strokeme">SELL AN ITEM</h1>
@@ -36,7 +35,7 @@
             </div>
     </div>
     <div class="item">
-      <img class="img-responsive" src="http://dl.dropboxusercontent.com/s/0w96o06wzbi2isb/shop%20%282%29.jpg" alt="Slide1" align="middle">
+      <%= link_to image_tag("shop (2).jpg", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
       <div class="carousel-caption">
               <h1 class="strokeme">SHOP NOW</h1>
               <h3 class="strokeme">What ever you want, whenever you want it</h3>
@@ -46,7 +45,7 @@
             </div>
     </div>
     <div class="item">
-      <img class="img-responsive" src="http://dl.dropboxusercontent.com/s/fffrgg18trjb8i5/re.jpeg" alt="Slide1" align="middle">
+      <%= link_to image_tag("re.jpg", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
      <div class="carousel-caption">
               <h1 class="strokeme">The Best Online Market Place for Exporters and Importers</h1>
 
@@ -262,7 +261,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
    <div class="item active">
-      <img class="img-responsive" src="http://dl.dropboxusercontent.com/s/vnup612mrxok40g/5.jpg" alt="Slide1" align="middle">
+      <%= link_to image_tag("5.jpg", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
        <div class="carousel-caption">
               <h1 class="strokeme">Start Selling On Sentams</h1>
               <h3 class="strokeme">Thousands Of Buyers Cant Wait to See what you Have in Store</h3>
