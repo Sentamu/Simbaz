@@ -124,7 +124,7 @@
         <h3><%= "Posted: #{listing.created_at.strftime("%b:%d:%Y")}" %><%= " at #{listing.created_at.strftime("%H:%M")}" %> </h3>
         <p><strong><%= link_to 'Send Seller Message', listing %></strong></p>
         <p><strong>Description:</strong></p>
-        <p><% listing.description %></p>
+        <p><%= listing.description %></p>
         
       </div>
      
