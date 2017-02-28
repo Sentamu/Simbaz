@@ -121,7 +121,7 @@
         <h3><%= listing.name %></h3>
         <p><strong><%= number_to_currency(listing.price) %></strong></p>
         <p><strong><%= link_to "Sold by #{listing.user.name}", user_path(listing.user.name) %></strong></p>
-        <h3><%= "Posted: #{listing.created_at.strftime("%b:%d:%Y")}" %><%= " at #{listing.created_at.strftime("%H:%M")}" %> <h3>
+        <h3><%= "Posted: #{listing.created_at.strftime("%b:%d:%Y")}" %><%= " at #{listing.created_at.strftime("%H:%M")}" %> </h3>
         <p><strong><%= link_to 'Send Seller Message', listing %></strong></p>
         <p><strong>Description:</strong></p>
         <p><% listing.description %></p>
@@ -175,7 +175,7 @@
     <h4 class="center">All Items for Sale</h4>
     <div class="thumbnail nnn">
       <a href="/categories/2">
-      <img class="img-responsive" src="https://dl.dropboxusercontent.com/s/bb8db0euq31oqiv/cat.jpg" alt="">
+      <img class="img-responsive" src="https://dl.dropboxusercontent.com/s/bb8db0euq31oqiv/cat.jpg" alt="all items">
 </a>
       <% link_to image_tag("") %>
 
@@ -188,7 +188,7 @@
     <h4 class="center">Clothing</h4>
     <div class="thumbnail nnn">
       <a href="/categories/15">
-      <img class="img-responsive" src="https://dl.dropboxusercontent.com/s/lmgup132sgjbjwp/cloth.jpg" alt="">
+      <img class="img-responsive" src="https://dl.dropboxusercontent.com/s/lmgup132sgjbjwp/cloth.jpg" alt="clothing">
 </a>
       <% link_to image_tag("") %>
 
@@ -201,7 +201,7 @@
     <h4 class="center">Computers and Electronics</h4>
     <div class="thumbnail nnn">
       <a href="/categories/16">
-      <img class="img-responsive" src="https://dl.dropboxusercontent.com/s/e40w0fiqkclclw1/comp.jpg" alt="">
+      <img class="img-responsive" src="https://dl.dropboxusercontent.com/s/e40w0fiqkclclw1/comp.jpg" alt="computers">
 </a>
       <% link_to image_tag("") %>
 
@@ -215,7 +215,7 @@
     <h4 class="center">Jewellery</h4>
     <div class="thumbnail nnn">
       <a href="/categories/27">
-      <img class="img-responsive" src="https://dl.dropboxusercontent.com/s/ccc2hrndes0wc6i/jew.jpg" alt="">
+      <img class="img-responsive" src="https://dl.dropboxusercontent.com/s/ccc2hrndes0wc6i/jew.jpg" alt="jewellery">
 </a>
       <% link_to image_tag("") %>
 
@@ -228,7 +228,7 @@
     <h4 class="center">Phones and Gadgets</h4>
     <div class="thumbnail nnn">
       <a href="/categories/35">
-      <img class="img-responsive" src="https://dl.dropboxusercontent.com/s/lmeib3w2pypcoxj/phone.jpg" alt="">
+      <img class="img-responsive" src="https://dl.dropboxusercontent.com/s/lmeib3w2pypcoxj/phone.jpg" alt="phones">
 </a>
       <% link_to image_tag("") %>
 
@@ -241,7 +241,7 @@
     <h4 class="center">Jobs</h4>
     <div class="thumbnail nnn">
       <a href="/categories/40">
-      <img class="img-responsive" src="https://dl.dropboxusercontent.com/s/bly0trhl7etypdv/job.jpg" alt="" >
+      <img class="img-responsive" src="https://dl.dropboxusercontent.com/s/bly0trhl7etypdv/job.jpg" alt="jobs" >
       </a>
       <% link_to image_tag("") %>
 

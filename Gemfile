@@ -31,7 +31,7 @@ gem 'imagesLoaded_rails'
 gem 'activeadmin', github: 'activeadmin'
 gem 'mailboxer', github: 'mailboxer/mailboxer'
 gem 'chosen-rails'
-
+gem 'sitemap_generator'
 
 group :development, :test do
   gem 'sqlite3'
