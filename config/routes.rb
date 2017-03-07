@@ -46,6 +46,8 @@ Rails.application.routes.draw do
 
   get 'pages/home'
 
+  get 'pages/help'
+
   get 'seller' => "listings#seller"
 
   get 'sales' => "orders#sales"
